@@ -2,6 +2,7 @@ import { MdLaptopWindows } from "react-icons/md";
 import { Button } from "flowbite-react";
 import { FiDownload } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
+import orang from "../assets/wee.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -56,7 +57,7 @@ export default function LandingPage() {
                     <div className="lg:col-span-5 flex justify-center lg:justify-end">
                         <img
                             alt="Afdhal"
-                            src="https://lh3.googleusercontent.com/sitesv/APaQ0STkBEZyuchUcXNZFBLbYE_HY2hG9htOKU2LkUgaLHwGdDEV9aqMVKArD1Tmq9CMnAZwu0xCLBtnT4twGFwMKQoxO5n4j2Hb2UXg7xWeKonzbT9fjjPlSTreGbpyGILD2A7h4V9Dj1CgMM0wKI4dh9tq0Autk9yYgr-yFxLjDQeBlzEWgjo1kUdoWMBJZc_sTp_r_Ll0TElfzo5bwVz-XABLoVDxEXe33Pn3_Yk=w1280"
+                            src={orang}
                             className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-2xl shadow-xl object-cover"
                             style={{ transform: "scale(1.03)" }}
                         />
