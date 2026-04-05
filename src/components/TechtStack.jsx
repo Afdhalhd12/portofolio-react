@@ -2,6 +2,55 @@ import { IoLibraryOutline } from "react-icons/io5";
 import CardComp from "./CardComp";
 
 export default function () {
+    const items = [
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            title: "JavaScript",
+            text: "Programming Language",
+        },
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            title: "React",
+            text: "Javascript",
+            sub: "Library",
+        },
+        {
+            foto: "https://laravel.com/img/logotype.min.svg",
+            title: "Laravel",
+            text: "Framework",
+            sub: "PHP",
+        },
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+            title: "Tailwind",
+            text: "CSS",
+            sub: "Framework",
+        },
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+            title: "Bootstrap",
+            text: "CSS",
+            sub: "Framework",
+        },
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+            title: "GitHub",
+            text: "Git Hosting",
+            sub: "Platform",
+        },
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+            title: "Git",
+            text: "Version",
+            sub: "Control",
+        },
+        {
+            foto: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+            title: "Postman",
+            text: "API",
+            sub: "Development",
+        },
+    ];
     return (
         <>
             <section
@@ -25,39 +74,16 @@ export default function () {
                     </div>
 
                     <div className="grid grid-cols-2 lg:grid-cols-8 gap-4 mt-5">
-
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" title="JavaScript" text={"Programming Language"} />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title="React" text="Javascript" sub="Library" />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://laravel.com/img/logotype.min.svg" title="JavaScript" text={"Framework"} sub={"PHP"} />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" title="Tailwind" text={"CSS"} sub={"Framework"} />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" text={"CSS"} sub={"Framework"} />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" title="GitHub" text={"Git Hosting"} sub={"Platform"} />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" title="Git" text={"Version"} sub={"Control"} />
-                        </div>
-                        <div className="lg:col-span-2">
-                            <CardComp foto="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" title="Postman" text={"API"} sub={"Development"} />
-                        </div>
+                        {items.map((item, i) => (
+                            <div key={i} className="lg:col-span-2">
+                                <CardComp {...item} />
+                            </div>
+                        ))}
 
                     </div>
 
                 </div>
             </section>
-
-            
-
         </>
     )
 }

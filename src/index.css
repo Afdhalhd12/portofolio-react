@@ -6,3 +6,16 @@
 * {
   font-family: Times, serif;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fbbf24;
+  border-radius: 9999px;
+}

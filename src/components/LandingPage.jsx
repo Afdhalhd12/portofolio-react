@@ -6,15 +6,15 @@ import orang from "../assets/wee.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 
 
 export default function LandingPage() {
     useEffect(() => {
         AOS.init({
-          duration: 1000,   
-          once: true       
+            duration: 600,
         });
-      }, []);
+    }, []);
     return (
         <>
 
@@ -45,12 +45,11 @@ export default function LandingPage() {
                         </p>
 
                         <div className="flex flex-wrap mt-6 gap-3">
-                            <Button color="dark" className="gap-1">
-                                <MdArrowOutward /> Explore
-                            </Button>
-                            <Button color="alternative" className="gap-1">
-                                <FiDownload /> Download CV
-                            </Button>
+                            <HashLink smooth to="/#about">
+                                <Button color="dark" className="gap-1 transition-all duration-300 hover:bg-gray-300 hover:text-black hover:">
+                                    <MdArrowOutward /> Explore
+                                </Button>
+                            </HashLink>
                         </div>
                     </div>
 

@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 export default function App() {
   return (
-    <>
+    <div className="">
       <NavBarComp />
       <header id="header">
         <LandingPage />
@@ -26,6 +26,6 @@ export default function App() {
       <section id="contact">
         <FooterComp />
       </section>
-    </>
+    </div>
   )
 }

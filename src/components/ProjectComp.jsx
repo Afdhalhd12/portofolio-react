@@ -1,48 +1,70 @@
 import { RxOpenInNewWindow } from "react-icons/rx";
-export default function ProjectComp({ project, judul, deskripsi }) {
+
+export default function ProjectComp({ project, judul, deskripsi, tech, subTech, link }) {
     return (
-        <>
-            <div class="w-80 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-                <div class="relative">
-                    <img
-                        src={project}
-                        className="w-full h-32 object-cover"
-                    />
-
-                    <span className="absolute top-2 left-2 bg-white/80 backdrop-blur px-2 py-0.5 rounded-full text-[10px] font-semibold">
-                        WEB
-                    </span>
-
-                    <span className="absolute top-2 right-2 bg-black text-white px-2 py-0.5 rounded-full text-[10px] flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
-                        Done
-                    </span>
-                </div>
+        <div className="group w-full bg-white rounded-2xl border border-gray-200 
+                        overflow-hidden transition-all duration-300 
+                        hover:shadow-xl hover:-translate-y-1
+                        h-full flex flex-col"> {/* ⬅️ penting */}
 
 
-                <div className="p-4">
-                    <h2 className="text-base font-semibold mb-1">
-                        {judul}
-                    </h2>
-                    <p className="text-gray-500 text-xs mb-3 line-clamp-2">
-                        {deskripsi}
-                    </p>
+            {/* IMAGE */}
+            <div className="relative overflow-hidden">
+                <img
+                    src={project}
+                    alt={judul}
+                    className="w-full h-40 object-cover transition duration-500 group-hover:scale-110"
+                />
 
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
 
-                    <div className="flex flex-wrap gap-1 mb-3">
-                        <span className="px-2 py-0.5 bg-gray-100 rounded-full text-[10px]">React</span>
-                        <span className="px-2 py-0.5 bg-gray-100 rounded-full text-[10px]">Tailwind</span>
-                    </div>
+                <span className="absolute top-3 left-3 bg-white/90 backdrop-blur px-2 py-0.5 rounded-full text-[11px] font-medium shadow-sm">
+                    WEB
+                </span>
 
-
-                    <div className="flex items-center justify-end border-t pt-2">
-                        <a className="text-gray-500 hover:text-amber-500" href="https://github.com/Afdhalhd12/Ar-Rahmah">
-                            <RxOpenInNewWindow className="text-2xl  " />
-                        </a>
-                    </div>
-
-                </div>
+                <span className="absolute top-3 right-3 bg-black/80 text-white px-2 py-0.5 rounded-full text-[11px] flex items-center gap-1 shadow">
+                    <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
+                    Done
+                </span>
             </div>
-        </>
-    )
+
+
+         
+            <div className="p-5 flex flex-col flex-grow">
+                
+                <h2 className="text-lg font-semibold text-gray-800 group-hover:text-amber-500 transition">
+                    {judul}
+                </h2>
+
+                <p className="text-sm text-gray-500 mt-2 line-clamp-2 leading-relaxed">
+                    {deskripsi}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-2 py-1 bg-gray-100 rounded-md text-xs font-medium">
+                        {tech}
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 rounded-md text-xs font-medium">
+                        {subTech}
+                    </span>
+                </div>
+
+               
+                <div className="mt-auto flex items-center justify-between pt-3 border-t border-gray-100">
+                    <span className="text-xs text-gray-400">
+                        View Project
+                    </span>
+
+                    <a
+                        href={link}
+                        target="_blank"
+                        className="text-gray-500 hover:text-amber-500 transition"
+                    >
+                        <RxOpenInNewWindow className="text-xl" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    );
 }

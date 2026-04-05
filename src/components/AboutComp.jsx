@@ -18,7 +18,7 @@ export default function AboutComp() {
                 <h2 className="md:text-3xl text-3xl font-serif mt-5">Hello, I'm Afdhal Hadi Solahudin!</h2>
                 <p className="text-gray-600 text-sm text-justify max-w-200 mt-5">I am a vocational high school student passionate about programming and web development. What started as curiosity about how websites work has evolved into a strong interest in building scalable digital solutions. On the frontend, I work with HTML, CSS, and JavaScript to build clean and interactive interfaces. I am exploring modern frameworks such as React and Next.js while leveraging TypeScript to write safer and maintainable code.</p>
 
-                <p className="text-gray-600 text-sm text-justify max-w-200 mt-5">I am a vocational high school student passionate about programming and web development. What started as curiosity about how websites work has evolved into a strong interest in building scalable digital solutions. On the frontend, I work with HTML, CSS, and JavaScript to build clean and interactive interfaces. I am exploring modern frameworks such as React and Next.js while leveraging TypeScript to write safer and maintainable code.</p>
+                <p className="text-gray-600 text-sm text-justify max-w-200 mt-5">As a student, I actively develop personal projects to apply my knowledge in real-world scenarios. I continuously improve my skills by exploring new technologies, writing clean and maintainable code, and focusing on user experience. I am committed to growing as a developer and building meaningful digital solutions.</p>
             </div>
         </>
     )
