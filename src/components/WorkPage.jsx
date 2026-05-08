@@ -27,6 +27,14 @@ export default function WorkPage() {
             subTech: "Bootstrap",
             link: "https://github.com/Afdhalhd12/Violetta-Hospital"
         },
+        {
+            project: tixid,
+            judul: "Tixid",
+            deskripsi: "A hospital web platform that enables patients to book online consultations, manage appointments, and access healthcare services digitally.",
+            tech: "Laravel",
+            subTech: "Bootstrap",
+            link: "https://github.com/Afdhalhd12/Violetta-Hospital"
+        },
     ];
 
     const certificates = [
@@ -55,7 +63,7 @@ export default function WorkPage() {
     return (
         <>
             <div className="hidden lg:flex absolute left-1 top-455.5 -translate-y-1/2 items-center gap-2">
-                <div className="rotate-90 font-bold text-xl lg:text-2xl">
+                <div className="font-anton rotate-90 font-bold text-xl lg:text-2xl">
                     My Work <span className="text-gray-400">-</span>{" "}
                     <span className="text-amber-500">04</span>
                 </div>
@@ -64,24 +72,24 @@ export default function WorkPage() {
             <div data-aos="fade-up" className=" p-6 md:px-12 lg:px-35 py-10">
                 <div className="flex gap-1">
                     <CiFolderOn className="text-5xl text-amber-500" />
-                    <h2 className="md:text-5xl text-4xl font-serif">My Works</h2>
+                    <h2 className="md:text-5xl text-4xl font-anton">My Works</h2>
                 </div>
 
                 <div className="flex gap-8 mt-6 border-b border-gray-300">
                     <button
                         onClick={() => setActive("tech")}
-                        className={`relative pb-3 font-semibold transition ${active === "tech" ? "text-black" : "text-gray-400"}`}>
+                        className={`relative pb-3 font-semibold font-roboto transition ${active === "tech" ? "text-black" : "text-gray-400"}`}>
                         My Projects
                         <span
-                            className={`absolute left-0 bottom-[-1px] w-full h-[2px] bg-amber-500 origin-left transition-transform duration-300 ${active === "tech" ? "scale-x-100" : "scale-x-0"}`} />
+                            className={`absolute left-0 -bottom-px w-full h-0.5 bg-amber-500 origin-left transition-transform duration-300 ${active === "tech" ? "scale-x-100" : "scale-x-0"}`} />
                     </button>
 
                     <button
                         onClick={() => setActive("sert")}
-                        className={`relative pb-3 font-semibold transition ${active === "sert" ? "text-black" : "text-gray-400"}`}>
+                        className={`relative pb-3 font-semibold font-roboto transition ${active === "sert" ? "text-black" : "text-gray-400"}`}>
                         My Certificates
                         <span
-                            className={`absolute left-0 bottom-[-1px] w-full h-[2px] bg-amber-500 origin-left transition-transform duration-300 ${active === "sert" ? "scale-x-100" : "scale-x-0"}`} />
+                            className={`absolute left-0 -bottom-px w-full h-0.5 bg-amber-500 origin-left transition-transform duration-300 ${active === "sert" ? "scale-x-100" : "scale-x-0"}`} />
                     </button>
                 </div>
                 {

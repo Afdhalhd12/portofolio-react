@@ -24,24 +24,24 @@ export default function NavBarComp() {
         >
             <div className="max-w-7xl mx-auto px-10 py-4 flex items-center justify-between">
 
-                <a href="/" className="text-xl font-semibold">
+                <a href="/" className="text-xl font-anton font-semibold">
                     Afdhal<span className="text-yellow-500">.</span>
                 </a>
 
-                <ul className="hidden md:flex space-x-8 text-gray-600 font-medium">
-                    <HashLink smooth to="/#header">
+                <ul className="font-roboto hidden md:flex space-x-8 text-gray-600 font-medium">
+                    <HashLink className="transition-in duration-150 hover:border-b-2 hover:border-amber-400 hover:font-bold" smooth to="/#header">
                         <li>Home</li>
                     </HashLink>
-                    <HashLink smooth to="/#about">
+                    <HashLink className="transition-in duration-150 hover:border-b-2 hover:border-amber-400 hover:font-bold" smooth to="/#about">
                         <li>About</li>
                     </HashLink>
-                    <HashLink smooth to="/#tech">
+                    <HashLink className="transition-in duration-150 hover:border-b-2 hover:border-amber-400 hover:font-bold" smooth to="/#tech">
                         <li>Skills</li>
                     </HashLink>
-                    <HashLink smooth to="/#work">
+                    <HashLink className="transition-in duration-150 hover:border-b-2 hover:border-amber-400 hover:font-bold" smooth to="/#work">
                         <li>Projects</li>
                     </HashLink>
-                    <HashLink smooth to="/#contact">
+                    <HashLink className="transition-in duration-150 hover:border-b-2 hover:border-amber-400 hover:font-bold" smooth to="/#contact">
                         <li>Contacts</li>
                     </HashLink>
                 </ul>

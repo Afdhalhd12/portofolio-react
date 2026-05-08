@@ -12,11 +12,11 @@ export default function CertificateCard({ image, title, issuer, date, link }) {
 
             {/* Content */}
             <div className="p-4">
-                <h3 className="font-semibold text-lg">{title}</h3>
-                <p className="text-sm text-gray-500 mt-1">{issuer}</p>
-                <p className="text-xs text-gray-400 mt-2">{date}</p>
+                <h3 className="font-semibold text-lg font-anton">{title}</h3>
+                <p className="text-sm text-gray-500 mt-1 font-roboto">{issuer}</p>
+                <p className="text-xs text-gray-400 mt-2 font-roboto">{date}</p>
 
-                <a href={link} className="mt-4 text-sm font-medium text-amber-500 hover:underline">
+                <a href={link} className="font-roboto mt-4 text-sm font-medium text-amber-500 hover:underline">
                     View Certificate → 
                 </a>
             </div>

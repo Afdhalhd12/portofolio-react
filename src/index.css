@@ -3,12 +3,16 @@
 @import "flowbite-react/plugin/tailwindcss";
 @source "../flowbite-react/class-list.json";
 
-* {
-  font-family: Times, serif;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
+}
+
+.font-roboto{
+  font-family: "Roboto", "san-serif";
+}
+
+.font-anton{
+  font-family: "Briston", "sans-serif";
 }
 
 ::-webkit-scrollbar-track {
@@ -18,4 +22,17 @@
 ::-webkit-scrollbar-thumb {
   background-color: #fbbf24;
   border-radius: 9999px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/assets/fonts/RobotoCondensed-VariableFont_wght.ttf');
+
+  font-family: 'Briston';
+  src: url('../src/assets/fonts/Anton-Regular.ttf');
+}
+
+@theme{
+  --font-Briston: "Briston", "sans-serif";
+  --font-Roboto: "Roboto", "sans-serif";
 }

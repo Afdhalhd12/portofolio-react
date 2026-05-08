@@ -19,7 +19,7 @@ export default function LandingPage() {
         <>
 
             <div className="hidden lg:flex absolute left-1 top-1/2 -translate-y-1/2 items-center gap-2">
-                <div className="rotate-90 font-bold text-xl lg:text-2xl">
+                <div className="font-anton rotate-90 font-bold text-xl lg:text-2xl">
                     Hero <span className="text-gray-400">-</span>{" "}
                     <span className="text-amber-500">01</span>
                 </div>
@@ -29,24 +29,24 @@ export default function LandingPage() {
                     <div className="lg:col-span-7">
                         <div className="flex items-center mb-3 gap-3">
                             <MdLaptopWindows className="text-amber-500 text-xl md:text-2xl" />
-                            <span className="text-amber-500 text-sm md:text-base font-medium tracking-wide">
+                            <span className="font-roboto text-amber-500 text-sm md:text-base font-medium tracking-wide">
                                 Web Developer Enthusiast
                             </span>
                         </div>
 
-                        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+                        <h1 className="font-bold font-anton text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
                             Afdhal <br />
                             Hadi <br />
                             Solahudin
                         </h1>
 
-                        <p className="text-gray-600 text-sm md:text-base max-w-md mt-5 leading-relaxed">
+                        <p className="font-roboto text-gray-600 text-sm md:text-base max-w-md mt-5 leading-relaxed">
                             Hi! I'm Afdhal, a Web Developer passionate about building modern web applications. Feel free to reach out via email or connect with me on LinkedIn and GitHub!
                         </p>
 
                         <div className="flex flex-wrap mt-6 gap-3">
                             <HashLink smooth to="/#about">
-                                <Button color="dark" className="gap-1 transition-all duration-300 hover:bg-gray-300 hover:text-black hover:">
+                                <Button color="dark" className="font-roboto gap-1 transition-all duration-300 hover:bg-gray-300 hover:text-black hover:">
                                     <MdArrowOutward /> Explore
                                 </Button>
                             </HashLink>
