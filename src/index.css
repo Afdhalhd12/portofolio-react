@@ -8,11 +8,11 @@
 }
 
 .font-roboto{
-  font-family: "Roboto", "san-serif";
+  font-family: "Inter", "san-serif";
 }
 
 .font-anton{
-  font-family: "Briston", "sans-serif";
+  font-family: "Oswald", "sans-serif";
 }
 
 ::-webkit-scrollbar-track {
@@ -25,11 +25,11 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../src/assets/fonts/RobotoCondensed-VariableFont_wght.ttf');
+  font-family: 'Inter';
+  src: url('../src/assets/fonts/Inter_18pt-Medium.ttf');
 
-  font-family: 'Briston';
-  src: url('../src/assets/fonts/Anton-Regular.ttf');
+  font-family: 'Oswald';
+  src: url('../src/assets/fonts/Oswald-Bold.ttf');
 }
 
 @theme{

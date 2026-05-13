@@ -5,6 +5,7 @@ import backend from "../assets/backend.png";
 import frotend from "../assets/frontend.png";
 import basic from "../assets/basic.png";
 import violet from "../assets/violet.png";
+import tixid from "../assets/image.png";
 import CertificateCard from "./CertificateCard";
 import { useState } from "react";
 
@@ -30,10 +31,10 @@ export default function WorkPage() {
         {
             project: tixid,
             judul: "Tixid",
-            deskripsi: "A hospital web platform that enables patients to book online consultations, manage appointments, and access healthcare services digitally.",
+            deskripsi: "Laravel-based movie ticket booking platform clone with authentication, seat reservation, showtime management, and online payment simulation.",
             tech: "Laravel",
             subTech: "Bootstrap",
-            link: "https://github.com/Afdhalhd12/Violetta-Hospital"
+            link: "https://github.com/Afdhalhd12/Projek-Tixid-PPLG-XI-2"
         },
     ];
 
